@@ -16,18 +16,18 @@ struct CharacterDetailsViewModel {
         func localizedName() -> String {
             switch self {
             case .MainInfo:
-                return "MAIN INFO"
+                return StringKey.Generic.mainInfoSectionTitle.get()
             case .Episodes:
-                return "EPISODES"
+                return StringKey.Generic.episodesSectionTitle.get()
             }
         }
     }
+    
     private let sections: [DetailsSection] = [.MainInfo, .Episodes]
     private let rowViewModel: CharacterRowViewModel
     private let episodeNumbers: [String]
     
     let screenTitle = StringKey.Generic.detailsScreenTitle.get()
-    
     
     var numberOfSections: Int {
         sections.count
@@ -40,8 +40,8 @@ struct CharacterDetailsViewModel {
     init(rowViewModel: CharacterRowViewModel) {
         self.rowViewModel = rowViewModel
         self.episodeNumbers = rowViewModel.episodes.map {
-            let componnts = $0.components(separatedBy: "/")
-            return componnts.last ?? "0"
+            let components = $0.components(separatedBy: "/")
+            return components.last ?? "0"
         }
     }
     

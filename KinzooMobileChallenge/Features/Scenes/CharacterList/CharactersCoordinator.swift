@@ -20,7 +20,7 @@ final class CharactersCoordinator: BaseCoordinator<AppNavigationController> {
 // MARK: - Characters Navigator
 extension CharactersCoordinator: CharactersNavigator {
     func showDetails(with viewModel: CharacterRowViewModel) {
-        let detailiViewController = CharacterListViewControllerFactory.makeCharacterDetailsViewController(with: viewModel)
-        rootViewController.pushViewController(detailiViewController, animated: true)
+        let detailsViewController = CharacterListViewControllerFactory.makeCharacterDetailsViewController(with: viewModel)
+        rootViewController.pushViewController(detailsViewController, animated: true)
     }
 }

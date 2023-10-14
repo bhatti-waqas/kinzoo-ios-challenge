@@ -21,4 +21,8 @@ struct Character: Decodable {
         case image
         case episode
     }
+    
+    static func makeDummy() -> Character {
+        .init(id: 1, name: "Rick", status: "Alive", species: "Human", image: "", episode: [])
+    }
 }

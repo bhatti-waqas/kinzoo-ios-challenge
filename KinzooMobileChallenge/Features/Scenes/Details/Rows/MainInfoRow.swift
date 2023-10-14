@@ -54,7 +54,7 @@ final class MainInfoRow: UITableViewCell {
         return label
     }()
     
-    private lazy var speciesStatck: UIStackView = {
+    private lazy var speciesStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
         return stack
@@ -104,10 +104,10 @@ private extension MainInfoRow {
     
     func addSubViews() {
         contentView.addSubview(verticalStackView)
-        [profileImageView, nameStack, statusStack, speciesStatck ].forEach(verticalStackView.addArrangedSubview)
+        [profileImageView, nameStack, statusStack, speciesStack ].forEach(verticalStackView.addArrangedSubview)
         [nameTitleLabel, nameLabel].forEach(nameStack.addArrangedSubview)
         [statusTitleLabel, statusLabel].forEach(statusStack.addArrangedSubview)
-        [speciesTitleLabel, speciesLabel].forEach(speciesStatck.addArrangedSubview)
+        [speciesTitleLabel, speciesLabel].forEach(speciesStack.addArrangedSubview)
     }
     
     func setupConstraints() {

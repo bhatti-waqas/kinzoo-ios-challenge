@@ -35,6 +35,23 @@
         }
       }
     },
+    "key_episodes_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EPISODES"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ÉPISODES"
+          }
+        }
+      }
+    },
     "key_list_screen_title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -48,6 +65,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Liste"
+          }
+        }
+      }
+    },
+    "key_main_info_sections_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MAIN INFO"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INFORMATIONS PRINCIPALES"
           }
         }
       }

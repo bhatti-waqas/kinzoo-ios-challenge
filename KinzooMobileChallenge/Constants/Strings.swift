@@ -31,6 +31,8 @@ enum GenericStrings: String, StringKey {
     case statusTitle = "key_status_title"
     case speciesTitle = "key_species_title"
     case ok = "key_ok"
+    case mainInfoSectionTitle = "key_main_info_sections_title"
+    case episodesSectionTitle = "key_episodes_title"
 }
 
 enum ErrorStrings: String, StringKey {
