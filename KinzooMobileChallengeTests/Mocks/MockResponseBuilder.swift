@@ -29,4 +29,14 @@ final class MockResponseBuilder {
             fatalError("Error: \(error)")
         }
     }
+    
+    static func getMockCharactersData() -> Data {
+        do {
+            let path = Bundle(for: MockResponseBuilder.self).path(forResource: "characters_response", ofType: "json")!
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            return data
+        } catch {
+            fatalError("Error: \(error)")
+        }
+    }
 }

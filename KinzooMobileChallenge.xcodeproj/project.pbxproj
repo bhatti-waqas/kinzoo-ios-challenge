@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		496860CC2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860CB2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift */; };
+		496860D02ADB439F005491E2 /* CharactersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860CF2ADB439F005491E2 /* CharactersUseCaseTests.swift */; };
+		496860D32ADB43DA005491E2 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860D22ADB43DA005491E2 /* MockNetworkService.swift */; };
 		49DF58762AD9CE4B00A67FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DF58752AD9CE4B00A67FAB /* Assets.xcassets */; };
 		49DF58792AD9CE4B00A67FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DF58772AD9CE4B00A67FAB /* LaunchScreen.storyboard */; };
 		49DF58A22AD9CE7900A67FAB /* AppServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF589D2AD9CE7900A67FAB /* AppServiceLocator.swift */; };
@@ -72,6 +74,8 @@
 
 /* Begin PBXFileReference section */
 		496860CB2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooMobilechallengeUITests.swift; sourceTree = "<group>"; };
+		496860CF2ADB439F005491E2 /* CharactersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersUseCaseTests.swift; sourceTree = "<group>"; };
+		496860D22ADB43DA005491E2 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		49DF58692AD9CE4900A67FAB /* KinzooMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinzooMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DF58752AD9CE4B00A67FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DF58782AD9CE4B00A67FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -155,6 +159,22 @@
 			path = KinzooMobileChallangeUITests;
 			sourceTree = "<group>";
 		};
+		496860CE2ADB4386005491E2 /* CharactersUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				496860CF2ADB439F005491E2 /* CharactersUseCaseTests.swift */,
+			);
+			path = CharactersUseCase;
+			sourceTree = "<group>";
+		};
+		496860D12ADB43CC005491E2 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				496860D22ADB43DA005491E2 /* MockNetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		49DF58602AD9CE4900A67FAB = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +212,7 @@
 		49DF58822AD9CE4B00A67FAB /* KinzooMobileChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				496860CE2ADB4386005491E2 /* CharactersUseCase */,
 				49DF591A2ADB392F00A67FAB /* ViewModel */,
 				49DF591D2ADB397D00A67FAB /* Mocks */,
 				49DF591E2ADB398A00A67FAB /* XCTestAysncExpectation.swift */,
@@ -426,6 +447,7 @@
 		49DF591D2ADB397D00A67FAB /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				496860D12ADB43CC005491E2 /* NetworkService */,
 				49DF59202ADB39C000A67FAB /* Responses */,
 				49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */,
 				49DF59272ADB3AAC00A67FAB /* MockCharacterNaivator.swift */,
@@ -626,8 +648,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49DF592A2ADB3B5000A67FAB /* MockResponseBuilder.swift in Sources */,
+				496860D32ADB43DA005491E2 /* MockNetworkService.swift in Sources */,
 				49DF591C2ADB393F00A67FAB /* CharacterListViewModelTests.swift in Sources */,
 				49DF59282ADB3AAC00A67FAB /* MockCharacterNaivator.swift in Sources */,
+				496860D02ADB439F005491E2 /* CharactersUseCaseTests.swift in Sources */,
 				49DF591F2ADB398A00A67FAB /* XCTestAysncExpectation.swift in Sources */,
 				49DF59262ADB39E800A67FAB /* MockCharactersUseCase.swift in Sources */,
 			);
