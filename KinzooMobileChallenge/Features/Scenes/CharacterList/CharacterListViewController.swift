@@ -99,5 +99,6 @@ extension CharacterListViewController {
 // MARK: - UITableViewDelegate
 extension CharacterListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.showDetails(at: indexPath.row)
     }
 }

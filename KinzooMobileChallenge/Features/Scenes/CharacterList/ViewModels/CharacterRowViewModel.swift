@@ -16,8 +16,10 @@ struct CharacterRowViewModel: Hashable {
     let image: String
     let episodes: [String]
     
+    let screenTitle = StringKey.Generic.detailsScreenTitle.get()
+    
     var imageUrl: URL? {
-        return URL(string: image)
+        URL(string: image)
     }
     
     init(character: Character) {
@@ -26,6 +28,14 @@ struct CharacterRowViewModel: Hashable {
         status = character.status
         species = character.species
         image = character.image
-        episodes = character.episode
+        episodes = character.episode.map {
+            let componnts = $0.components(separatedBy: "/")
+            return componnts.last ?? "0"
+        }
+        
+    }
+    
+    func episodeNumber(at index: Int) -> String {
+        episodes[index]
     }
 }

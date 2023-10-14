@@ -22,7 +22,7 @@ final class CharacterListViewModel {
     var characterRowViewModels: [CharacterRowViewModel] = []
     @Published private(set) var viewState: ListViewState = .idle
     
-    let screenTitle = StringKey.Generic.screenTitle.get()
+    let screenTitle = StringKey.Generic.listScreenTitle.get()
     
     init(characterUseCase: CharacterUseCase, navigator: CharactersNavigator) {
         self.characterUseCase = characterUseCase
@@ -38,6 +38,8 @@ final class CharacterListViewModel {
     }
     
     func showDetails(at index: Int) {
+        let row = characterRowViewModels[index]
+        navigator.showDetails(with: row)
     }
 }
 // MARK: - Private methods

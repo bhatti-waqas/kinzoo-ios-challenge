@@ -25,7 +25,11 @@ extension StringKey {
 }
 
 enum GenericStrings: String, StringKey {
-    case screenTitle = "key_screen_title"
+    case listScreenTitle = "key_list_screen_title"
+    case detailsScreenTitle = "key_details_screen_title"
+    case nameTitle = "key_name_title"
+    case statusTitle = "key_status_title"
+    case speciesTitle = "key_species_title"
     case ok = "key_ok"
 }
 

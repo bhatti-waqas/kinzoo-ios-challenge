@@ -6,4 +6,5 @@
 //
 
 protocol CharactersNavigator {
+    func showDetails(with viewModel: CharacterRowViewModel)
 }

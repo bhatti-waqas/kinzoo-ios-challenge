@@ -12,11 +12,15 @@ final class CharactersCoordinator: BaseCoordinator<AppNavigationController> {
     
     override func start() {
         let factory = ServiceLocator.characterListViewControllersFactory()
-        let currencyViewController = factory.makeCharacterListViewController(with: self)
-        rootViewController.pushViewController(currencyViewController, animated: true)
+        let listViewController = factory.makeCharacterListViewController(with: self)
+        rootViewController.pushViewController(listViewController, animated: true)
     }
 }
 
 // MARK: - Characters Navigator
 extension CharactersCoordinator: CharactersNavigator {
+    func showDetails(with viewModel: CharacterRowViewModel) {
+        let detailiViewController = CharacterListViewControllerFactory.makeCharacterDetailsViewController(with: viewModel)
+        rootViewController.pushViewController(detailiViewController, animated: true)
+    }
 }
