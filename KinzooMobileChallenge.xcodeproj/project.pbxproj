@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496860CC2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860CB2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift */; };
 		49DF58762AD9CE4B00A67FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DF58752AD9CE4B00A67FAB /* Assets.xcassets */; };
 		49DF58792AD9CE4B00A67FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DF58772AD9CE4B00A67FAB /* LaunchScreen.storyboard */; };
-		49DF58842AD9CE4B00A67FAB /* KinzooMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58832AD9CE4B00A67FAB /* KinzooMobileChallengeTests.swift */; };
 		49DF58A22AD9CE7900A67FAB /* AppServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF589D2AD9CE7900A67FAB /* AppServiceLocator.swift */; };
 		49DF58A32AD9CE7900A67FAB /* CharactersNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF589E2AD9CE7900A67FAB /* CharactersNavigator.swift */; };
 		49DF58A42AD9CE7900A67FAB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF589F2AD9CE7900A67FAB /* AppCoordinator.swift */; };
@@ -44,6 +44,13 @@
 		49DF59122ADAB7F300A67FAB /* MainInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59112ADAB7F300A67FAB /* MainInfoRow.swift */; };
 		49DF59142ADAC19A00A67FAB /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59132ADAC19A00A67FAB /* EpisodeRow.swift */; };
 		49DF59192ADB347D00A67FAB /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59182ADB347D00A67FAB /* CharacterDetailsViewModel.swift */; };
+		49DF591C2ADB393F00A67FAB /* CharacterListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF591B2ADB393F00A67FAB /* CharacterListViewModelTests.swift */; };
+		49DF591F2ADB398A00A67FAB /* XCTestAysncExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF591E2ADB398A00A67FAB /* XCTestAysncExpectation.swift */; };
+		49DF59232ADB39C000A67FAB /* characters_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 49DF59212ADB39C000A67FAB /* characters_response.json */; };
+		49DF59242ADB39C000A67FAB /* characters_response_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 49DF59222ADB39C000A67FAB /* characters_response_empty.json */; };
+		49DF59262ADB39E800A67FAB /* MockCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */; };
+		49DF59282ADB3AAC00A67FAB /* MockCharacterNaivator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59272ADB3AAC00A67FAB /* MockCharacterNaivator.swift */; };
+		49DF592A2ADB3B5000A67FAB /* MockResponseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59292ADB3B5000A67FAB /* MockResponseBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +71,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		496860CB2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooMobilechallengeUITests.swift; sourceTree = "<group>"; };
 		49DF58692AD9CE4900A67FAB /* KinzooMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinzooMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DF58752AD9CE4B00A67FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DF58782AD9CE4B00A67FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49DF587A2AD9CE4B00A67FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49DF587F2AD9CE4B00A67FAB /* KinzooMobileChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinzooMobileChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49DF58832AD9CE4B00A67FAB /* KinzooMobileChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooMobileChallengeTests.swift; sourceTree = "<group>"; };
 		49DF58892AD9CE4B00A67FAB /* KinzooMobileChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinzooMobileChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DF589D2AD9CE7900A67FAB /* AppServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServiceLocator.swift; sourceTree = "<group>"; };
 		49DF589E2AD9CE7900A67FAB /* CharactersNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersNavigator.swift; sourceTree = "<group>"; };
@@ -100,6 +107,13 @@
 		49DF59112ADAB7F300A67FAB /* MainInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoRow.swift; sourceTree = "<group>"; };
 		49DF59132ADAC19A00A67FAB /* EpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRow.swift; sourceTree = "<group>"; };
 		49DF59182ADB347D00A67FAB /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
+		49DF591B2ADB393F00A67FAB /* CharacterListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTests.swift; sourceTree = "<group>"; };
+		49DF591E2ADB398A00A67FAB /* XCTestAysncExpectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestAysncExpectation.swift; sourceTree = "<group>"; };
+		49DF59212ADB39C000A67FAB /* characters_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters_response.json; sourceTree = "<group>"; };
+		49DF59222ADB39C000A67FAB /* characters_response_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters_response_empty.json; sourceTree = "<group>"; };
+		49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharactersUseCase.swift; sourceTree = "<group>"; };
+		49DF59272ADB3AAC00A67FAB /* MockCharacterNaivator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterNaivator.swift; sourceTree = "<group>"; };
+		49DF59292ADB3B5000A67FAB /* MockResponseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,11 +147,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		496860CD2ADB3E30005491E2 /* KinzooMobileChallangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				496860CB2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift */,
+			);
+			path = KinzooMobileChallangeUITests;
+			sourceTree = "<group>";
+		};
 		49DF58602AD9CE4900A67FAB = {
 			isa = PBXGroup;
 			children = (
 				49DF586B2AD9CE4900A67FAB /* KinzooMobileChallenge */,
 				49DF58822AD9CE4B00A67FAB /* KinzooMobileChallengeTests */,
+				496860CD2ADB3E30005491E2 /* KinzooMobileChallangeUITests */,
 				49DF586A2AD9CE4900A67FAB /* Products */,
 				49DF58F02AD9CF7B00A67FAB /* Frameworks */,
 			);
@@ -169,7 +192,9 @@
 		49DF58822AD9CE4B00A67FAB /* KinzooMobileChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				49DF58832AD9CE4B00A67FAB /* KinzooMobileChallengeTests.swift */,
+				49DF591A2ADB392F00A67FAB /* ViewModel */,
+				49DF591D2ADB397D00A67FAB /* Mocks */,
+				49DF591E2ADB398A00A67FAB /* XCTestAysncExpectation.swift */,
 			);
 			path = KinzooMobileChallengeTests;
 			sourceTree = "<group>";
@@ -390,6 +415,34 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		49DF591A2ADB392F00A67FAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49DF591B2ADB393F00A67FAB /* CharacterListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49DF591D2ADB397D00A67FAB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				49DF59202ADB39C000A67FAB /* Responses */,
+				49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */,
+				49DF59272ADB3AAC00A67FAB /* MockCharacterNaivator.swift */,
+				49DF59292ADB3B5000A67FAB /* MockResponseBuilder.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		49DF59202ADB39C000A67FAB /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				49DF59212ADB39C000A67FAB /* characters_response.json */,
+				49DF59222ADB39C000A67FAB /* characters_response_empty.json */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -473,6 +526,7 @@
 					};
 					49DF58882AD9CE4B00A67FAB = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 						TestTargetID = 49DF58682AD9CE4900A67FAB;
 					};
 				};
@@ -518,6 +572,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49DF59242ADB39C000A67FAB /* characters_response_empty.json in Resources */,
+				49DF59232ADB39C000A67FAB /* characters_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +625,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49DF58842AD9CE4B00A67FAB /* KinzooMobileChallengeTests.swift in Sources */,
+				49DF592A2ADB3B5000A67FAB /* MockResponseBuilder.swift in Sources */,
+				49DF591C2ADB393F00A67FAB /* CharacterListViewModelTests.swift in Sources */,
+				49DF59282ADB3AAC00A67FAB /* MockCharacterNaivator.swift in Sources */,
+				49DF591F2ADB398A00A67FAB /* XCTestAysncExpectation.swift in Sources */,
+				49DF59262ADB39E800A67FAB /* MockCharactersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +637,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496860CC2ADB3E17005491E2 /* KinzooMobilechallengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,6 +886,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -832,6 +894,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.KinzooMobileChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = KinzooMobileChallenge;
@@ -842,6 +905,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
