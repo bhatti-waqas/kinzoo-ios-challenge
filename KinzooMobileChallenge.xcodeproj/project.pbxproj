@@ -43,6 +43,7 @@
 		49DF590F2ADAA06B00A67FAB /* CharacterDetailsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF590E2ADAA06B00A67FAB /* CharacterDetailsUI.swift */; };
 		49DF59122ADAB7F300A67FAB /* MainInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59112ADAB7F300A67FAB /* MainInfoRow.swift */; };
 		49DF59142ADAC19A00A67FAB /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59132ADAC19A00A67FAB /* EpisodeRow.swift */; };
+		49DF59192ADB347D00A67FAB /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59182ADB347D00A67FAB /* CharacterDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		49DF590E2ADAA06B00A67FAB /* CharacterDetailsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsUI.swift; sourceTree = "<group>"; };
 		49DF59112ADAB7F300A67FAB /* MainInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoRow.swift; sourceTree = "<group>"; };
 		49DF59132ADAC19A00A67FAB /* EpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRow.swift; sourceTree = "<group>"; };
+		49DF59182ADB347D00A67FAB /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +365,7 @@
 		49DF59092ADAA00B00A67FAB /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				49DF59172ADB347000A67FAB /* ViewModel */,
 				49DF59102ADAB7E300A67FAB /* Rows */,
 				49DF590C2ADAA05700A67FAB /* CharacterDetailsViewController.swift */,
 				49DF590E2ADAA06B00A67FAB /* CharacterDetailsUI.swift */,
@@ -377,6 +380,14 @@
 				49DF59132ADAC19A00A67FAB /* EpisodeRow.swift */,
 			);
 			path = Rows;
+			sourceTree = "<group>";
+		};
+		49DF59172ADB347000A67FAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49DF59182ADB347D00A67FAB /* CharacterDetailsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,6 +549,7 @@
 				49DF58DC2AD9CE8C00A67FAB /* Character.swift in Sources */,
 				49DF58D12AD9CE8C00A67FAB /* CharacterListUI.swift in Sources */,
 				49DF58CF2AD9CE8C00A67FAB /* CharacterListViewModel.swift in Sources */,
+				49DF59192ADB347D00A67FAB /* CharacterDetailsViewModel.swift in Sources */,
 				49DF58B22AD9CE8100A67FAB /* UIImageView.swift in Sources */,
 				49DF59122ADAB7F300A67FAB /* MainInfoRow.swift in Sources */,
 				49DF58DB2AD9CE8C00A67FAB /* CharacterResponse.swift in Sources */,

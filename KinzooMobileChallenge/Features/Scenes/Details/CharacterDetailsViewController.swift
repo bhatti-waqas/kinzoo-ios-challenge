@@ -9,17 +9,10 @@ import UIKit
 
 final class CharacterDetailsViewController: UIViewController {
 
-    private enum DetailsSection: String {
-        case MainInfo = "MAIN INFO"
-        case Episodes = "EPISODES"
-    }
-    
     private let ui: CharacterDetailsUI = CharacterDetailsUI()
-    private let viewModel: CharacterRowViewModel
+    private let viewModel: CharacterDetailsViewModel
     
-    private let detailSections: [DetailsSection] = [.MainInfo, .Episodes]
-    
-    init(with viewModel: CharacterRowViewModel) {
+    init(with viewModel: CharacterDetailsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -47,36 +40,30 @@ private extension CharacterDetailsViewController {
 extension CharacterDetailsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let detailsSection = detailSections[section]
-        return detailsSection.rawValue
+        viewModel.getSectionTitle(at: section)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let detailsSection = detailSections[section]
-        switch detailsSection {
-        case .MainInfo:
-            return 1
-        case .Episodes:
-            return viewModel.episodes.count
-        }
+        viewModel.numberOfRows(at: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let detailsSection = detailSections[indexPath.section]
-        switch detailsSection {
+        let section = viewModel.getSection(at: indexPath.section)
+        switch section {
         case .MainInfo:
             let cell: MainInfoRow = tableView.dequeue(for: indexPath)
-            cell.configure(with: viewModel)
+            let info = viewModel.getCharacterInfo()
+            cell.configure(with: info)
             return cell
         case .Episodes:
             let cell: EpisodeRow = tableView.dequeue(for: indexPath)
-            let episodeNumber = viewModel.episodeNumber(at: indexPath.row)
+            let episodeNumber = viewModel.getEpisodeNumber(at: indexPath.row)
             cell.configure(with: episodeNumber)
             return cell
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        detailSections.count
+        viewModel.numberOfSections
     }
 }

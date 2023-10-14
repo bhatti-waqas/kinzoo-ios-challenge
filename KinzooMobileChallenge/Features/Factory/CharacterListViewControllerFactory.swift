@@ -22,6 +22,7 @@ final class CharacterListViewControllerFactory {
     }
     
     static func makeCharacterDetailsViewController(with viewModel: CharacterRowViewModel) -> CharacterDetailsViewController {
+        let viewModel = CharacterDetailsViewModel(rowViewModel: viewModel)
         let details = CharacterDetailsViewController(with: viewModel)
         return details
     }
