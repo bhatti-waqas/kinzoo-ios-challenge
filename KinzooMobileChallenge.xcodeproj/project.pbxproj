@@ -39,6 +39,8 @@
 		49DF58FE2AD9D02E00A67FAB /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 49DF58FD2AD9D02E00A67FAB /* DesignSystem */; };
 		49DF59042AD9D20E00A67FAB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 49DF59032AD9D20E00A67FAB /* Localizable.xcstrings */; };
 		49DF59082ADA9E9400A67FAB /* KinzooColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59072ADA9E9400A67FAB /* KinzooColor.swift */; };
+		49DF590D2ADAA05700A67FAB /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF590C2ADAA05700A67FAB /* CharacterDetailsViewController.swift */; };
+		49DF590F2ADAA06B00A67FAB /* CharacterDetailsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF590E2ADAA06B00A67FAB /* CharacterDetailsUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		49DF59032AD9D20E00A67FAB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		49DF59052AD9D22700A67FAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		49DF59072ADA9E9400A67FAB /* KinzooColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooColor.swift; sourceTree = "<group>"; };
+		49DF590C2ADAA05700A67FAB /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		49DF590E2ADAA06B00A67FAB /* CharacterDetailsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,12 +237,13 @@
 		49DF58B52AD9CE8C00A67FAB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				49DF58B62AD9CE8C00A67FAB /* Characters */,
+				49DF58B62AD9CE8C00A67FAB /* CharacterList */,
+				49DF59092ADAA00B00A67FAB /* Details */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		49DF58B62AD9CE8C00A67FAB /* Characters */ = {
+		49DF58B62AD9CE8C00A67FAB /* CharacterList */ = {
 			isa = PBXGroup;
 			children = (
 				49DF58B72AD9CE8C00A67FAB /* ViewModels */,
@@ -247,7 +252,7 @@
 				49DF58BD2AD9CE8C00A67FAB /* CharactersCoordinator.swift */,
 				49DF58BE2AD9CE8C00A67FAB /* CharacterListViewController.swift */,
 			);
-			path = Characters;
+			path = CharacterList;
 			sourceTree = "<group>";
 		};
 		49DF58B72AD9CE8C00A67FAB /* ViewModels */ = {
@@ -349,6 +354,15 @@
 				49DF59072ADA9E9400A67FAB /* KinzooColor.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		49DF59092ADAA00B00A67FAB /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				49DF590C2ADAA05700A67FAB /* CharacterDetailsViewController.swift */,
+				49DF590E2ADAA06B00A67FAB /* CharacterDetailsUI.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +514,7 @@
 				49DF58DA2AD9CE8C00A67FAB /* CharacterUseCase.swift in Sources */,
 				49DF58A32AD9CE7900A67FAB /* CharactersNavigator.swift in Sources */,
 				49DF58A22AD9CE7900A67FAB /* AppServiceLocator.swift in Sources */,
+				49DF590F2ADAA06B00A67FAB /* CharacterDetailsUI.swift in Sources */,
 				49DF58D92AD9CE8C00A67FAB /* NetworkCharacterUseCase.swift in Sources */,
 				49DF58B02AD9CE8100A67FAB /* EndPoint+Characters.swift in Sources */,
 				49DF58E02AD9CE9200A67FAB /* Strings.swift in Sources */,
@@ -516,6 +531,7 @@
 				49DF58D32AD9CE8C00A67FAB /* CharactersCoordinator.swift in Sources */,
 				49DF58B32AD9CE8100A67FAB /* AppNavigationController.swift in Sources */,
 				49DF58D42AD9CE8C00A67FAB /* CharacterListViewController.swift in Sources */,
+				49DF590D2ADAA05700A67FAB /* CharacterDetailsViewController.swift in Sources */,
 				49DF58A62AD9CE7900A67FAB /* SceneDelegate.swift in Sources */,
 				49DF58D02AD9CE8C00A67FAB /* CharacterRowViewModel.swift in Sources */,
 			);
