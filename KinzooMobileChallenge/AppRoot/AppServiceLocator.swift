@@ -22,7 +22,8 @@ final class AppServiceLocator {
     private init() {
         /// Register dependencies
         let networkService: NetworkService = NetworkService()
-        characterUseCase = NetworkCharacterUseCase(networkService: networkService)
+        let cache: LocalStorage = UserDefaultStroage()
+        characterUseCase = DefaultCharacterUseCase(networkService: networkService, cache: cache)
     }
     
     func characterListViewControllersFactory() -> CharacterListViewControllerFactory {

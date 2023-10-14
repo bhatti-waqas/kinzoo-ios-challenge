@@ -11,6 +11,10 @@
 		496860D02ADB439F005491E2 /* CharactersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860CF2ADB439F005491E2 /* CharactersUseCaseTests.swift */; };
 		496860D32ADB43DA005491E2 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860D22ADB43DA005491E2 /* MockNetworkService.swift */; };
 		496860D62ADB455B005491E2 /* CharactersCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860D52ADB455B005491E2 /* CharactersCoordinatorTests.swift */; };
+		496860D92ADB4C2F005491E2 /* CharacterDetailsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860D82ADB4C2F005491E2 /* CharacterDetailsViewControllerFactory.swift */; };
+		496860DC2ADB4D79005491E2 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860DB2ADB4D79005491E2 /* LocalStorage.swift */; };
+		496860DF2ADB4DC7005491E2 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860DE2ADB4DC7005491E2 /* UserDefaultsStorage.swift */; };
+		496860E22ADB5416005491E2 /* MockLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496860E12ADB5416005491E2 /* MockLocalStorage.swift */; };
 		49DF58762AD9CE4B00A67FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DF58752AD9CE4B00A67FAB /* Assets.xcassets */; };
 		49DF58792AD9CE4B00A67FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DF58772AD9CE4B00A67FAB /* LaunchScreen.storyboard */; };
 		49DF58A22AD9CE7900A67FAB /* AppServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF589D2AD9CE7900A67FAB /* AppServiceLocator.swift */; };
@@ -28,7 +32,7 @@
 		49DF58D22AD9CE8C00A67FAB /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58BC2AD9CE8C00A67FAB /* CharacterCell.swift */; };
 		49DF58D32AD9CE8C00A67FAB /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58BD2AD9CE8C00A67FAB /* CharactersCoordinator.swift */; };
 		49DF58D42AD9CE8C00A67FAB /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58BE2AD9CE8C00A67FAB /* CharacterListViewController.swift */; };
-		49DF58D92AD9CE8C00A67FAB /* NetworkCharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58C72AD9CE8C00A67FAB /* NetworkCharacterUseCase.swift */; };
+		49DF58D92AD9CE8C00A67FAB /* DefaultCharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58C72AD9CE8C00A67FAB /* DefaultCharacterUseCase.swift */; };
 		49DF58DA2AD9CE8C00A67FAB /* CharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58C92AD9CE8C00A67FAB /* CharacterUseCase.swift */; };
 		49DF58DB2AD9CE8C00A67FAB /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58CB2AD9CE8C00A67FAB /* CharacterResponse.swift */; };
 		49DF58DC2AD9CE8C00A67FAB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF58CC2AD9CE8C00A67FAB /* Character.swift */; };
@@ -78,6 +82,10 @@
 		496860CF2ADB439F005491E2 /* CharactersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersUseCaseTests.swift; sourceTree = "<group>"; };
 		496860D22ADB43DA005491E2 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		496860D52ADB455B005491E2 /* CharactersCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCoordinatorTests.swift; sourceTree = "<group>"; };
+		496860D82ADB4C2F005491E2 /* CharacterDetailsViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewControllerFactory.swift; sourceTree = "<group>"; };
+		496860DB2ADB4D79005491E2 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		496860DE2ADB4DC7005491E2 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		496860E12ADB5416005491E2 /* MockLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalStorage.swift; sourceTree = "<group>"; };
 		49DF58692AD9CE4900A67FAB /* KinzooMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinzooMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DF58752AD9CE4B00A67FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DF58782AD9CE4B00A67FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,7 +107,7 @@
 		49DF58BC2AD9CE8C00A67FAB /* CharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		49DF58BD2AD9CE8C00A67FAB /* CharactersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
 		49DF58BE2AD9CE8C00A67FAB /* CharacterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
-		49DF58C72AD9CE8C00A67FAB /* NetworkCharacterUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCharacterUseCase.swift; sourceTree = "<group>"; };
+		49DF58C72AD9CE8C00A67FAB /* DefaultCharacterUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCharacterUseCase.swift; sourceTree = "<group>"; };
 		49DF58C92AD9CE8C00A67FAB /* CharacterUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterUseCase.swift; sourceTree = "<group>"; };
 		49DF58CB2AD9CE8C00A67FAB /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		49DF58CC2AD9CE8C00A67FAB /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -183,6 +191,31 @@
 				496860D52ADB455B005491E2 /* CharactersCoordinatorTests.swift */,
 			);
 			path = CharactersCoordinator;
+			sourceTree = "<group>";
+		};
+		496860DA2ADB4D1C005491E2 /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+				496860DD2ADB4DB6005491E2 /* UserDefaultsStorage */,
+				496860DB2ADB4D79005491E2 /* LocalStorage.swift */,
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		496860DD2ADB4DB6005491E2 /* UserDefaultsStorage */ = {
+			isa = PBXGroup;
+			children = (
+				496860DE2ADB4DC7005491E2 /* UserDefaultsStorage.swift */,
+			);
+			path = UserDefaultsStorage;
+			sourceTree = "<group>";
+		};
+		496860E02ADB5406005491E2 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				496860E12ADB5416005491E2 /* MockLocalStorage.swift */,
+			);
+			path = LocalStorage;
 			sourceTree = "<group>";
 		};
 		49DF58602AD9CE4900A67FAB = {
@@ -338,6 +371,7 @@
 		49DF58C52AD9CE8C00A67FAB /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				496860DA2ADB4D1C005491E2 /* PersistentStorages */,
 				49DF58C62AD9CE8C00A67FAB /* DefaultExerciseUseCase */,
 				49DF58C82AD9CE8C00A67FAB /* UseCases */,
 				49DF58CA2AD9CE8C00A67FAB /* Entities */,
@@ -348,7 +382,7 @@
 		49DF58C62AD9CE8C00A67FAB /* DefaultExerciseUseCase */ = {
 			isa = PBXGroup;
 			children = (
-				49DF58C72AD9CE8C00A67FAB /* NetworkCharacterUseCase.swift */,
+				49DF58C72AD9CE8C00A67FAB /* DefaultCharacterUseCase.swift */,
 			);
 			path = DefaultExerciseUseCase;
 			sourceTree = "<group>";
@@ -374,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				49DF58CE2AD9CE8C00A67FAB /* CharacterListViewControllerFactory.swift */,
+				496860D82ADB4C2F005491E2 /* CharacterDetailsViewControllerFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -458,6 +493,7 @@
 		49DF591D2ADB397D00A67FAB /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				496860E02ADB5406005491E2 /* LocalStorage */,
 				496860D12ADB43CC005491E2 /* NetworkService */,
 				49DF59202ADB39C000A67FAB /* Responses */,
 				49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */,
@@ -651,17 +687,20 @@
 				49DF58A32AD9CE7900A67FAB /* CharactersNavigator.swift in Sources */,
 				49DF58A22AD9CE7900A67FAB /* AppServiceLocator.swift in Sources */,
 				49DF590F2ADAA06B00A67FAB /* CharacterDetailsUI.swift in Sources */,
-				49DF58D92AD9CE8C00A67FAB /* NetworkCharacterUseCase.swift in Sources */,
+				49DF58D92AD9CE8C00A67FAB /* DefaultCharacterUseCase.swift in Sources */,
 				49DF58B02AD9CE8100A67FAB /* EndPoint+Characters.swift in Sources */,
 				49DF58E02AD9CE9200A67FAB /* Strings.swift in Sources */,
 				49DF59082ADA9E9400A67FAB /* KinzooColor.swift in Sources */,
 				49DF58B12AD9CE8100A67FAB /* UIViewController.swift in Sources */,
+				496860DF2ADB4DC7005491E2 /* UserDefaultsStorage.swift in Sources */,
 				49DF58D22AD9CE8C00A67FAB /* CharacterCell.swift in Sources */,
 				49DF58DC2AD9CE8C00A67FAB /* Character.swift in Sources */,
+				496860D92ADB4C2F005491E2 /* CharacterDetailsViewControllerFactory.swift in Sources */,
 				49DF58D12AD9CE8C00A67FAB /* CharacterListUI.swift in Sources */,
 				49DF58CF2AD9CE8C00A67FAB /* CharacterListViewModel.swift in Sources */,
 				49DF59192ADB347D00A67FAB /* CharacterDetailsViewModel.swift in Sources */,
 				49DF58B22AD9CE8100A67FAB /* UIImageView.swift in Sources */,
+				496860DC2ADB4D79005491E2 /* LocalStorage.swift in Sources */,
 				49DF59122ADAB7F300A67FAB /* MainInfoRow.swift in Sources */,
 				49DF58DB2AD9CE8C00A67FAB /* CharacterResponse.swift in Sources */,
 				49DF58A52AD9CE7900A67FAB /* AppDelegate.swift in Sources */,
@@ -681,6 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49DF592A2ADB3B5000A67FAB /* MockResponseBuilder.swift in Sources */,
+				496860E22ADB5416005491E2 /* MockLocalStorage.swift in Sources */,
 				496860D32ADB43DA005491E2 /* MockNetworkService.swift in Sources */,
 				496860D62ADB455B005491E2 /* CharactersCoordinatorTests.swift in Sources */,
 				49DF591C2ADB393F00A67FAB /* CharacterListViewModelTests.swift in Sources */,
