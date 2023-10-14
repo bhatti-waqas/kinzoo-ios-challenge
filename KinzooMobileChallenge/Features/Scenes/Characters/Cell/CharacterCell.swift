@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import DesignSystem
 
 final class CharacterCell: UITableViewCell {
     
     private lazy var containerView: UIView = {
-        UIView()
+        let view = UIView()
+        view.backgroundColor = KinzooColor.grey.color(opacity: 1)
+        return view
     }()
     
     private lazy var nameLabel: UILabel = {
@@ -22,8 +25,8 @@ final class CharacterCell: UITableViewCell {
     private lazy var profileImageView: UIImageView = {
         let imgView = UIImageView()
         imgView.contentMode = .scaleAspectFit
-        imgView.clipsToBounds = true
-        imgView.image = UIImage(named: "placeHolder")
+        imgView.layer.cornerRadius = 20
+        imgView.layer.masksToBounds = true
         return imgView
     }()
     
@@ -57,14 +60,13 @@ private extension CharacterCell {
         }
         
         profileImageView.snp.makeConstraints { make in
-            make.leading.trailing.top.equalToSuperview()
-            make.width.equalTo(profileImageView.snp.height).multipliedBy(1.415)
+            make.leading.trailing.top.equalToSuperview().inset(10)
+            make.width.equalTo(profileImageView.snp.height)
         }
         
         nameLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(10)
-            make.trailing.bottom.equalToSuperview().offset(10)
             make.top.equalTo(profileImageView.snp.bottom).offset(10)
+            make.leading.trailing.bottom.equalToSuperview().inset(10)
         }
     }
 }
