@@ -38,6 +38,7 @@
 		49DF58FC2AD9CFF300A67FAB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 49DF58FB2AD9CFF300A67FAB /* SnapKit */; };
 		49DF58FE2AD9D02E00A67FAB /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 49DF58FD2AD9D02E00A67FAB /* DesignSystem */; };
 		49DF59042AD9D20E00A67FAB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 49DF59032AD9D20E00A67FAB /* Localizable.xcstrings */; };
+		49DF59082ADA9E9400A67FAB /* KinzooColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59072ADA9E9400A67FAB /* KinzooColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		49DF58DF2AD9CE9200A67FAB /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		49DF59032AD9D20E00A67FAB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		49DF59052AD9D22700A67FAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		49DF59072ADA9E9400A67FAB /* KinzooColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		49DF58A72AD9CE8000A67FAB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				49DF59062ADA9E8800A67FAB /* Theme */,
 				49DF58A82AD9CE8000A67FAB /* Extensions */,
 			);
 			path = Common;
@@ -340,6 +343,14 @@
 			path = Localizations;
 			sourceTree = "<group>";
 		};
+		49DF59062ADA9E8800A67FAB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				49DF59072ADA9E9400A67FAB /* KinzooColor.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -492,6 +503,7 @@
 				49DF58D92AD9CE8C00A67FAB /* NetworkCharacterUseCase.swift in Sources */,
 				49DF58B02AD9CE8100A67FAB /* EndPoint+Characters.swift in Sources */,
 				49DF58E02AD9CE9200A67FAB /* Strings.swift in Sources */,
+				49DF59082ADA9E9400A67FAB /* KinzooColor.swift in Sources */,
 				49DF58B12AD9CE8100A67FAB /* UIViewController.swift in Sources */,
 				49DF58D22AD9CE8C00A67FAB /* CharacterCell.swift in Sources */,
 				49DF58DC2AD9CE8C00A67FAB /* Character.swift in Sources */,
