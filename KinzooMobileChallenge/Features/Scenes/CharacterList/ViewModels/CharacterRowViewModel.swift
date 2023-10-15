@@ -28,9 +28,4 @@ struct CharacterRowViewModel: Hashable {
         image = character.image
         episodes = character.episode
     }
-    
-    /// will be used for test cases
-    static func makeDummy() -> CharacterRowViewModel {
-        .init(character: CharacterEntity.makeDummy())
-    }
 }

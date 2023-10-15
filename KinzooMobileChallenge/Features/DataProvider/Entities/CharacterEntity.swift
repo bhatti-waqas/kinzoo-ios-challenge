@@ -22,8 +22,4 @@ struct CharacterEntity: Codable {
         case image
         case episode
     }
-    
-    static func makeDummy() -> CharacterEntity {
-        .init(id: 1, name: "Rick", status: "Alive", species: "Human", image: "", episode: [])
-    }
 }

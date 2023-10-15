@@ -25,7 +25,7 @@ final class CharactersCoordinatorTests: XCTestCase {
         // Given
         let mockNavigationController = MockNavigationController()
         let coordinator = CharactersCoordinator(rootViewController: mockNavigationController)
-        let viewModel = CharacterRowViewModel.makeDummy()
+        let viewModel = CharacterRowViewModel.mocked()
         // When
         coordinator.showDetails(with: viewModel)
         

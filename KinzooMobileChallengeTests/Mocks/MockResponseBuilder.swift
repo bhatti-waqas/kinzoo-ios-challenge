@@ -40,3 +40,15 @@ final class MockResponseBuilder {
         }
     }
 }
+
+extension CharacterRowViewModel {
+    static func mocked() -> CharacterRowViewModel {
+        .init(character: CharacterEntity.mocked())
+    }
+}
+
+extension CharacterEntity {
+    static func mocked() -> CharacterEntity {
+        .init(id: 1, name: "Rick", status: "Alive", species: "Human", image: "", episode: [])
+    }
+}
