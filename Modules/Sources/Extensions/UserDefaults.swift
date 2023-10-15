@@ -12,15 +12,6 @@ public protocol UserDefaultsKey {
 }
 
 public extension UserDefaultsKey {
-//    func save(_ value: [String: Double]) {
-//        UserDefaults.standard.set(value, forKey: rawValue)
-//        UserDefaults.standard.synchronize()
-//    }
-//    
-//    func save(_ value: String) {
-//        UserDefaults.standard.set(value, forKey: rawValue)
-//        UserDefaults.standard.synchronize()
-//    }
     func save(_ data: Data) {
         UserDefaults.standard.set(data, forKey: rawValue)
         UserDefaults.standard.synchronize()

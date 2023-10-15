@@ -16,15 +16,12 @@ final class AppServiceLocator {
     static let shared = AppServiceLocator()
     
     // MARK: - private Property
-    private let characterUseCase: CharacterUseCase
-    
-    // MARK: - Init
-    private init() {
-        /// Register dependencies
+    // Lazy Injection of dependencies
+    private lazy var characterUseCase: CharacterUseCase = {
         let networkService: NetworkService = NetworkService()
         let cache: LocalStorage = UserDefaultStroage()
-        characterUseCase = DefaultCharacterUseCase(networkService: networkService, cache: cache)
-    }
+        return DefaultCharacterUseCase(networkService: networkService, cache: cache)
+    }()
     
     func characterListViewControllersFactory() -> CharacterListViewControllerFactory {
         CharacterListViewControllerFactory(characterUseCase: characterUseCase)
