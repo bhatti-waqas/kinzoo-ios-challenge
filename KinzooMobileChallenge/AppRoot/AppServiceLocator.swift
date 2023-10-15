@@ -19,7 +19,7 @@ final class AppServiceLocator {
     // Lazy Injection of dependencies
     private lazy var characterUseCase: CharacterUseCase = {
         let networkService: NetworkService = NetworkService()
-        let cache: LocalStorage = UserDefaultStroage()
+        let cache: LocalStorage = UserDefaultStorage()
         return DefaultCharacterUseCase(networkService: networkService, cache: cache)
     }()
     

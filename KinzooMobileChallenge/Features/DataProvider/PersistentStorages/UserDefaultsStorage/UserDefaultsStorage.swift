@@ -8,7 +8,7 @@
 import Foundation
 import Extensions
 
-final class UserDefaultStroage: LocalStorage {
+final class UserDefaultStorage: LocalStorage {
     
     func fetchCharacters() -> [CharacterEntity]? {
         guard let data: Data = UserDefaults.Application.characters.get() else { return nil }
