@@ -29,7 +29,7 @@ This project uses Swift Package Manager [SPM](https://swift.org/package-manager/
 <br>
 <img src = "README Files/characters.png" width = 600>
 
-- Details of Exercise
+- Details of Character
 <br>
 <img src = "README Files/characters-details.png" width = 600>
 
