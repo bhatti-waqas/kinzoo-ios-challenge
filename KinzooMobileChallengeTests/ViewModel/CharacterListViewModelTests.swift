@@ -14,7 +14,7 @@ final class CharacterListViewModelTests: XCTestCase {
     
     private var sut: CharacterListViewModel!
     private var mockUseCase: MockCharactersUseCase!
-    private var mockNavigator: MockCharacterNaivator!
+    private var mockNavigator: MockCharacterNavigator!
     
     private var cancel: Set<AnyCancellable>!
     
@@ -22,7 +22,7 @@ final class CharacterListViewModelTests: XCTestCase {
         super.setUp()
         cancel = Set()
         mockUseCase = MockCharactersUseCase()
-        mockNavigator = MockCharacterNaivator()
+        mockNavigator = MockCharacterNavigator()
         sut = CharacterListViewModel(characterUseCase: mockUseCase, navigator: mockNavigator)
     }
     

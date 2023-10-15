@@ -20,10 +20,4 @@ final class CharacterListViewControllerFactory {
         let characterListViewController =  CharacterListViewController(with: viewModel)
         return characterListViewController
     }
-    
-    static func makeCharacterDetailsViewController(with viewModel: CharacterRowViewModel) -> CharacterDetailsViewController {
-        let viewModel = CharacterDetailsViewModel(rowViewModel: viewModel)
-        let details = CharacterDetailsViewController(with: viewModel)
-        return details
-    }
 }

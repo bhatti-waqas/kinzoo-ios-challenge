@@ -56,7 +56,7 @@
 		49DF59232ADB39C000A67FAB /* characters_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 49DF59212ADB39C000A67FAB /* characters_response.json */; };
 		49DF59242ADB39C000A67FAB /* characters_response_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 49DF59222ADB39C000A67FAB /* characters_response_empty.json */; };
 		49DF59262ADB39E800A67FAB /* MockCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */; };
-		49DF59282ADB3AAC00A67FAB /* MockCharacterNaivator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59272ADB3AAC00A67FAB /* MockCharacterNaivator.swift */; };
+		49DF59282ADB3AAC00A67FAB /* MockCharacterNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59272ADB3AAC00A67FAB /* MockCharacterNavigator.swift */; };
 		49DF592A2ADB3B5000A67FAB /* MockResponseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF59292ADB3B5000A67FAB /* MockResponseBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -126,7 +126,7 @@
 		49DF59212ADB39C000A67FAB /* characters_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters_response.json; sourceTree = "<group>"; };
 		49DF59222ADB39C000A67FAB /* characters_response_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters_response_empty.json; sourceTree = "<group>"; };
 		49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharactersUseCase.swift; sourceTree = "<group>"; };
-		49DF59272ADB3AAC00A67FAB /* MockCharacterNaivator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterNaivator.swift; sourceTree = "<group>"; };
+		49DF59272ADB3AAC00A67FAB /* MockCharacterNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterNavigator.swift; sourceTree = "<group>"; };
 		49DF59292ADB3B5000A67FAB /* MockResponseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -497,7 +497,7 @@
 				496860D12ADB43CC005491E2 /* NetworkService */,
 				49DF59202ADB39C000A67FAB /* Responses */,
 				49DF59252ADB39E800A67FAB /* MockCharactersUseCase.swift */,
-				49DF59272ADB3AAC00A67FAB /* MockCharacterNaivator.swift */,
+				49DF59272ADB3AAC00A67FAB /* MockCharacterNavigator.swift */,
 				49DF59292ADB3B5000A67FAB /* MockResponseBuilder.swift */,
 			);
 			path = Mocks;
@@ -724,7 +724,7 @@
 				496860D32ADB43DA005491E2 /* MockNetworkService.swift in Sources */,
 				496860D62ADB455B005491E2 /* CharactersCoordinatorTests.swift in Sources */,
 				49DF591C2ADB393F00A67FAB /* CharacterListViewModelTests.swift in Sources */,
-				49DF59282ADB3AAC00A67FAB /* MockCharacterNaivator.swift in Sources */,
+				49DF59282ADB3AAC00A67FAB /* MockCharacterNavigator.swift in Sources */,
 				496860D02ADB439F005491E2 /* CharactersUseCaseTests.swift in Sources */,
 				49DF591F2ADB398A00A67FAB /* XCTestAysncExpectation.swift in Sources */,
 				49DF59262ADB39E800A67FAB /* MockCharactersUseCase.swift in Sources */,

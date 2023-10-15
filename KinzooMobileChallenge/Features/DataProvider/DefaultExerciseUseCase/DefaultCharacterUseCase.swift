@@ -21,7 +21,7 @@ final class DefaultCharacterUseCase {
 extension DefaultCharacterUseCase: CharacterUseCase {
     
     /// will fetch from cache first
-    /// in order to provide offline support and cahcing
+    /// in order to provide offline support and caching
     func fetchCharacters() async throws -> [CharacterEntity] {
         if let characters = cache.fetchCharacters() {
             return characters
