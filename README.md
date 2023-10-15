@@ -40,4 +40,4 @@ This project uses Swift Package Manager [SPM](https://swift.org/package-manager/
 
 ## Getting Started
 ### Getting the project
-- The project can be cloned from https://github.com/bhatti-waqas/GymondoAssesment.git
+- The project can be cloned from https://github.com/bhatti-waqas/kinzoo-ios-challenge.git
