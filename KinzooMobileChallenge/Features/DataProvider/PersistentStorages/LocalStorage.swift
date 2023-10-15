@@ -8,6 +8,6 @@
 import Foundation
 
 protocol LocalStorage {
-    func fetchCharacters() -> [Character]?
-    func persist(characters: [Character])
+    func fetchCharacters() -> [CharacterEntity]?
+    func persist(characters: [CharacterEntity])
 }

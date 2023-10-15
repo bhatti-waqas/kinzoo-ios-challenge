@@ -6,7 +6,7 @@
 //
 
 struct CharacterResponse: Decodable {
-    let results: [Character]
+    let results: [CharacterEntity]
     
     enum CodingKeys: CodingKey {
         case results

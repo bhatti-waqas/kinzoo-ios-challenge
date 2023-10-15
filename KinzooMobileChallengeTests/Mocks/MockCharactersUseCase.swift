@@ -10,9 +10,9 @@ import Foundation
 
 final class MockCharactersUseCase: CharacterUseCase {
     
-    var fetchCharactersResult: Result<[Character], Error>!
+    var fetchCharactersResult: Result<[CharacterEntity], Error>!
     
-    func fetchCharacters() async throws -> [Character] {
+    func fetchCharacters() async throws -> [CharacterEntity] {
         switch fetchCharactersResult {
         case .success(let characters):
             return characters

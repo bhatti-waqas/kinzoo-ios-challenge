@@ -62,11 +62,11 @@ private extension CharacterListViewModel {
         }
     }
     
-    func prepareCharacters(characters: [Character]) -> [CharacterRowViewModel] {
+    func prepareCharacters(characters: [CharacterEntity]) -> [CharacterRowViewModel] {
         characters.map(makeCharacterRowViewModel(with:))
     }
     
-    func makeCharacterRowViewModel(with character: Character) -> CharacterRowViewModel {
+    func makeCharacterRowViewModel(with character: CharacterEntity) -> CharacterRowViewModel {
         .init(character: character)
     }
     

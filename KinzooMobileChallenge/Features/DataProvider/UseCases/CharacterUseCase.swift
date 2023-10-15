@@ -6,5 +6,5 @@
 //
 
 protocol CharacterUseCase {
-    func fetchCharacters() async throws -> [Character]
+    func fetchCharacters() async throws -> [CharacterEntity]
 }

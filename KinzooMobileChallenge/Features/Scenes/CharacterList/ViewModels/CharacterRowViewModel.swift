@@ -20,7 +20,7 @@ struct CharacterRowViewModel: Hashable {
         URL(string: image)
     }
     
-    init(character: Character) {
+    init(character: CharacterEntity) {
         id = character.id
         name = character.name
         status = character.status
@@ -31,6 +31,6 @@ struct CharacterRowViewModel: Hashable {
     
     /// will be used for test cases
     static func makeDummy() -> CharacterRowViewModel {
-        .init(character: Character.makeDummy())
+        .init(character: CharacterEntity.makeDummy())
     }
 }

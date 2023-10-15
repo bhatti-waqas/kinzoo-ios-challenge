@@ -1,11 +1,12 @@
 //
-//  Character.swift
+//  CharacterEntity.swift
 //  KinzooMobileChallenge
 //
 //  Created by Waqas Naseem on 14/10/2023.
 //
 
-struct Character: Codable {
+/// Named it CharacterEntity to avoid confusing with swift Character
+struct CharacterEntity: Codable {
     let id: Int
     let name: String
     let status: String
@@ -22,7 +23,7 @@ struct Character: Codable {
         case episode
     }
     
-    static func makeDummy() -> Character {
+    static func makeDummy() -> CharacterEntity {
         .init(id: 1, name: "Rick", status: "Alive", species: "Human", image: "", episode: [])
     }
 }

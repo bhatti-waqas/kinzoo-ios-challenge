@@ -10,13 +10,13 @@ import Extensions
 
 final class UserDefaultStroage: LocalStorage {
     
-    func fetchCharacters() -> [Character]? {
+    func fetchCharacters() -> [CharacterEntity]? {
         guard let data: Data = UserDefaults.Application.characters.get() else { return nil }
-        guard let exchangeRate = try? JSONDecoder().decode([Character].self, from: data) else { return nil}
-        return exchangeRate
+        guard let characters = try? JSONDecoder().decode([CharacterEntity].self, from: data) else { return nil}
+        return characters
     }
     
-    func persist(characters: [Character]) {
+    func persist(characters: [CharacterEntity]) {
         guard let data = try? JSONEncoder().encode(characters) else { return }
         UserDefaults.Application.characters.save(data)
     }

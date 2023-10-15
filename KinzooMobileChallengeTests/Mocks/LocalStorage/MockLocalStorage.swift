@@ -9,14 +9,14 @@
 
 final class MockLocalStorage: LocalStorage {
     
-    var characters: [Character]?
+    var characters: [CharacterEntity]?
     var isPersistCalled: Bool = false
     
-    func fetchCharacters() -> [Character]? {
+    func fetchCharacters() -> [CharacterEntity]? {
         characters
     }
     
-    func persist(characters: [Character]) {
+    func persist(characters: [CharacterEntity]) {
         isPersistCalled = true
     }
 }
