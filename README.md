@@ -11,8 +11,8 @@ When user selects a character from list display its Details screen.
 
 ### Enviroment
 - iOS Minimum 15.0
-- Xcode 15.3
-- Swift 5.0.0
+- Xcode 15.0
+- Swift 5.0.0+
 
 ### Dependencies
 This project uses Swift Package Manager [SPM](https://swift.org/package-manager/) for dependcy managment.
